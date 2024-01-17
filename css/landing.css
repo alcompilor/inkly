@@ -10,6 +10,11 @@ body {
     align-items: center;
     min-height: 100vh;
     color: #fff;
+
+    @media screen and (max-width: 768px) {
+        justify-content: start;
+        min-height: 100%;
+    }
 }
 
 .landing-container {
@@ -20,6 +25,13 @@ body {
     align-items: center;
     max-width: 1200px;
     padding: 5%;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 8%;
+    }
 }
 
 .landing-left {
@@ -32,6 +44,10 @@ body {
 .landing-logo {
     width: 400px;
     height: auto;
+
+    @media screen and (max-width: 768px) {
+        width: 200px;
+    }
 }
 
 .landing-slogan {
