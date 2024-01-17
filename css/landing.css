@@ -1,0 +1,81 @@
+body {
+    background-color: #641f36;
+}
+
+/* 224b2e*/
+/*641f36*/
+/*22344b*/
+.root {
+    font-family: 'Lora', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.landing-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    padding: 5%;
+}
+
+.landing-left {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    justify-self: end;
+}
+
+.landing-logo {
+    width: 400px;
+    height: auto;
+}
+
+.landing-slogan {
+    font-size: 2.3rem;
+    line-height: 1.4;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #ffffff22;
+    text-decoration-thickness: 6px;
+    max-width: 23ch;
+}
+
+.landing-right {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.landing-info {
+    hyphens: auto;
+    text-align: justify;
+    font-weight: 600;
+    line-height: 1.7;
+    font-size: 1.3rem;
+    max-width: 25ch;
+}
+
+a:has(> .landing-btn) {
+    max-width: max-content;
+}
+
+.landing-btn {
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 0.8rem 1rem;
+    font-weight: 800;
+    border: none;
+    background-color: #ffffff;
+    color: #641f36;
+}
+
+.landing-btn:hover {
+    background-color: #ffffffc0;
+}
