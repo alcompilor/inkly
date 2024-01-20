@@ -13,7 +13,7 @@ const buildComponent = () => {
     const leftImg = document.createElement("img");
     leftImg.className = "landing-logo";
     [leftImg.src, leftImg.alt] = [
-        "./assets/img/logo-white.svg",
+        "./assets/img/logo.svg",
         "Image showing logo of the Socialize website",
     ];
     [leftImg.width, leftImg.height] = [200, 80];
@@ -32,7 +32,7 @@ const buildComponent = () => {
         "Explore posts freely, no registrations needed — just pure, effortless interaction.";
 
     const rightAnchor = document.createElement("a")
-    rightAnchor.href = "./posts.html";
+    rightAnchor.href = "./feed.html";
 
     const rightBtn = document.createElement("button");
     rightBtn.className = "landing-btn";
