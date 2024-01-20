@@ -1,4 +1,4 @@
-import * as Landing from "../components/landing/Landing.js";
+import * as Landing from "../../components/landing/Landing.js";
 
 const render = () => {
     const root = document.querySelector(".root");
