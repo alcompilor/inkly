@@ -1,0 +1,118 @@
+.navbar {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        background: linear-gradient(6deg, #080c28 60%, #38427a 100%);
+        background-attachment: fixed;
+        min-height: 100vh;
+        box-shadow: 6px 0px 0px 0px #4a549c3d;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 4% 6%;
+        background: linear-gradient(21deg, #080c28 20%, #38427a 100%);
+        position: sticky;
+        top: 0;
+        z-index: 9;
+    }
+}
+
+.navbar>a, .navbar>nav {
+    align-self: center;
+    position: sticky;
+}
+
+.navbar>a {
+    top: 70px;
+}
+
+.navbar>nav {
+    top: 200px;
+}
+
+.navbar>nav>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    list-style-type: none;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar>nav>ul>li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar>nav>ul>li>a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: #272f5e;
+    background-color: #e4e9ff;
+    padding: 5% 13%;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.navbar>nav>ul>li>a:hover {
+    background-color: #e4e9ffd4;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar>details>summary>a>img {
+        width: 140px;
+        height: auto;
+    }
+
+    .navbar>details>nav>ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 1.5rem;
+        padding: 3% 0 0 3%;
+    }
+
+    .navbar>details>nav>ul>li>a {
+        text-align: center;
+        text-decoration: none;
+        font-weight: 600;
+        color: #e4e9ff;
+        letter-spacing: 2px;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+
+    .navbar>details>summary {
+        display: flex;
+        position: relative;
+        align-items: center;
+        list-style: none;
+    }
+
+    .navbar>details>summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .navbar>details>summary::after {
+        content: url("../assets/icons/menu.svg");
+        position: absolute;
+        font-size: 1rem;
+        justify-self: end;
+        top: 6px;
+        right: 8px;
+    }
+
+    .navbar>details[open]>summary::after {
+        content: url("../assets/icons/close.svg");
+        font-size: 1rem;
+        justify-self: end;
+    }
+}
