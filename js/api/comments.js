@@ -5,7 +5,7 @@ const getComments = async (postID) => {
         );
         const data = await res.json();
 
-        return data;
+        return data.comments;
     } catch (err) {
         throw new Error(`Failed to fetch comments for the post`);
     }

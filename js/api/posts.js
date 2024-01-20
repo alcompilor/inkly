@@ -5,7 +5,7 @@ const getPosts = async (limit, skipID = 0) => {
         );
         const data = await res.json();
 
-        return data;
+        return data.posts;
     } catch (err) {
         throw new Error("Failed to fetch posts");
     }
