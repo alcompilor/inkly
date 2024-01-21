@@ -13,9 +13,16 @@ const buildPage = async () => {
 
 const render = async () => {
     document.body.prepend(Navbar.buildComponent());
+
     const root = document.querySelector(".root");
     const removeFb = Fallback.buildComponent(root);
+
     root.appendChild(await buildPage());
+
+    const profileContainer = document.createElement("div");
+    profileContainer.classList.add("profile-container", "hidden");
+    document.body.appendChild(profileContainer);
+
     removeFb();
 };
 
