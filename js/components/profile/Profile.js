@@ -58,7 +58,7 @@ const buildComponent = (user) => {
     birthDateEl.className = "about-birthdate";
     birthDateEl.textContent = `Birth Date:\n${
         user.birthDate
-    } — (${calcAge(user.birthDate)} years)`;
+    } — (${calcAge(user.birthDate)})`;
 
     const genderEl = document.createElement("span");
     genderEl.className = "about-gender";
