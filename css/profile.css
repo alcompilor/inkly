@@ -2,6 +2,7 @@
     overflow: hidden;
 
     > :not(:last-child) {
+        pointer-events: none;
         opacity: 0.25;
         filter: blur(10px);
         transition-duration: 0.4s;
