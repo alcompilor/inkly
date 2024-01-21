@@ -200,3 +200,8 @@ body {
         opacity: 0.5;
     }
 }
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
