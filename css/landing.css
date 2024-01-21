@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(156deg, #06091d, #38427a 100%);
+    background: linear-gradient(156deg, #06091d, #4e387a 100%);
     min-height: 100vh;
 }
 
@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #e4e9ff;
+    color: #eaeaff;
 }
 
 @media screen and (max-width: 768px) {
@@ -88,7 +88,7 @@ a:has(>.landing-btn) {
     font-weight: 800;
     border: none;
     background-color: #e4e9ff;
-    color: #2d3465;
+    color: #43306a;
     text-transform: uppercase;
     letter-spacing: 2px;
     border-radius: 8px;

@@ -3,15 +3,20 @@
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        background: linear-gradient(6deg, #080c28 60%, #38427a 100%);
+        background-color: #F7FAFF;
+        background-image: repeating-radial-gradient(circle at 0 0, #15165726 0, #5061b400 35px), repeating-linear-gradient(#352a7ccf, #120626);
+        background-blend-mode: normal;
         background-attachment: fixed;
         min-height: 100vh;
-        box-shadow: 6px 0px 0px 0px #4a549c3d;
+        box-shadow: inset -1px 0px 11px 0px #0b12394f;
     }
 
     @media screen and (max-width: 768px) {
         padding: 4% 6%;
-        background: linear-gradient(21deg, #080c28 20%, #38427a 100%);
+        background-color: #F7FAFF;
+        background-image: repeating-radial-gradient(circle at 0 0, #15165726 0, #5061b400 35px), repeating-linear-gradient(#352a7ccf, #120626);
+        background-blend-mode: normal;
+        background-attachment: fixed;
         position: sticky;
         top: 0;
         z-index: 9;
@@ -52,18 +57,18 @@
 .navbar>nav>ul>li>a {
     text-align: center;
     text-decoration: none;
-    font-weight: 600;
-    color: #272f5e;
-    background-color: #e4e9ff;
+    font-weight: 700;
+    color: #353374;
+    background-color: #eaeaff;
     padding: 5% 13%;
-    border-radius: 10px;
-    letter-spacing: 2px;
-    font-size: 1.1rem;
+    border-radius: 6px;
+    font-size: 1rem;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .navbar>nav>ul>li>a:hover {
-    background-color: #e4e9ffd4;
+    background-color: #e6e4ffd4;
 }
 
 @media screen and (max-width: 768px) {

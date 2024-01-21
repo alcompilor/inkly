@@ -14,9 +14,9 @@
     flex-direction: column;
     z-index: 99;
     height: max-content;
-    background: linear-gradient(138deg, #384b7a 10%, #080c28 100%);
+    background: linear-gradient(138deg, #4d387a 10%, #120828 100%);
     color: #eaedff;
-    box-shadow: 1px -1px 20px 13px #0b12393b;
+    box-shadow: 1px -1px 20px 13px #170b393b;
     box-sizing: border-box;
 
     @media screen and (min-width: 768px) {
@@ -58,7 +58,7 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background-color: #435991;
+    background-color: #534391;
     border-radius: 50%;
     padding: 0.7%;
 }
@@ -73,9 +73,9 @@
     border-radius: 50%;
     object-fit: cover;
     padding: 1%;
-    outline: 3px solid #506aae;
+    outline: 3px solid #59489b;
     height: auto;
-    background-color: #506aae;
+    background-color: #59489b;
 
     @media screen and (max-width: 768px) {
         width: 20%;
@@ -98,12 +98,12 @@
 
 .p-details-username {
     font-size: 1.1rem;
-    background: #c6d6ff;
+    background: #cec6ff;
     padding: 0.5% 2.5%;
     border-radius: 6px;
     font-weight: 500;
     max-width: max-content;
-    color: #2a325d;
+    color: #2f2a5d;
 }
 
 .about-container,
@@ -124,7 +124,7 @@
     font-size: 1.3rem;
     text-decoration: underline;
     text-decoration-thickness: 6px;
-    text-decoration-color: #5862af4a;
+    text-decoration-color: #6658af4a;
 }
 
 .about-wrapper,
