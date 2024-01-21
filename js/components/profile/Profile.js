@@ -5,9 +5,6 @@ const calcAge = (birthDate) => {
 };
 
 const buildComponent = (user) => {
-    const profileContainer = document.createElement("div");
-    profileContainer.className = "profile-container";
-
     const profileWrapper = document.createElement("div");
     profileWrapper.className = "profile-wrapper";
 
@@ -19,7 +16,9 @@ const buildComponent = (user) => {
     ];
     [closeButton.width, closeButton.height] = [30, 30];
     closeButton.addEventListener("click", () => {
-        profileContainer.remove();
+        const profileContainer = document.querySelector(".profile-container");
+        profileContainer.classList.toggle("hidden");
+        profileWrapper.remove();
         document.body.classList.remove("blur");
     });
 
@@ -108,9 +107,7 @@ const buildComponent = (user) => {
         aboutContainer,
         moreContainer
     );
-    profileContainer.appendChild(profileWrapper);
-
-    return profileContainer;
+    return profileWrapper;
 };
 
 export { buildComponent };
