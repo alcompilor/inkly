@@ -66,12 +66,20 @@ const mount = (masonry = false) => {
             btn.replaceWith(newBtn);
 
             newBtn.addEventListener("click", async () => {
+                document.body.classList.add("blur");
+
+                const profileContainer = document.querySelector(".profile-container");
+                profileContainer.classList.toggle("hidden");
+
+                const removeFb = Fallback.buildComponent(profileContainer);
+
                 const userID = btn.dataset.id;
                 const fetchedUser = await UserAPI.getUser(userID);
 
                 const profile = Profile.buildComponent(fetchedUser);
-                document.body.append(profile);
-                document.body.classList.add("blur");
+                removeFb();
+                
+                profileContainer.appendChild(profile);
             });
         });
     };
