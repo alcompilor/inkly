@@ -1,6 +1,6 @@
 const buildComponent = () => {
     // Containers
-    const landingCont = document.createElement("article");
+    const landingCont = document.createElement("section");
     landingCont.className = "landing-container";
 
     const landingLeftCont = document.createElement("section");
