@@ -1,5 +1,5 @@
 const buildComponent = () => {
-    const navContainer = document.createElement("div");
+    const navContainer = document.createElement("header");
     navContainer.className = "navbar";
 
     const logoAnchor = document.createElement("a");
