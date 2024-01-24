@@ -10,7 +10,7 @@ const fetchPostComments = async (postID) => {
 };
 
 const buildComponent = async (posts, masonry = false) => {
-    const postsContainer = document.createElement("div");
+    const postsContainer = document.createElement("section");
     postsContainer.className = "posts-container";
 
     for (const post of posts) {
