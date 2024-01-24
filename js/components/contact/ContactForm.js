@@ -30,7 +30,7 @@ const initValidation = (btn, nameInput, emailInput, form, formNote) => {
 };
 
 const buildComponent = () => {
-    const formContainer = document.createElement("div");
+    const formContainer = document.createElement("section");
     formContainer.className = "cform-container";
 
     const formTitle = document.createElement("h1");
@@ -44,6 +44,8 @@ const buildComponent = () => {
     const form = document.createElement("form");
     form.id = "cform";
     form.action = "./feed.html";
+
+    const fieldSet = document.createElement("fieldset");
 
     const fullName = document.createElement("input");
     fullName.className = "cform-input-name";
@@ -60,7 +62,7 @@ const buildComponent = () => {
     const desc = document.createElement("textarea");
     desc.className = "cform-input-desc";
     desc.placeholder = "Please type your message here.";
-    desc.rows = 7;
+    desc.rows = 8;
     desc.cols = 30;
     desc.required = true;
 
@@ -78,8 +80,9 @@ const buildComponent = () => {
     submitBtn.className = "cform-submit-btn";
     submitBtn.textContent = "Send";
     submitBtn.disabled = true;
-
-    form.append(fullName, email, desc, checkboxLabel);
+    
+    fieldSet.append(fullName, email, desc, checkboxLabel);
+    form.append(fieldSet);
     formContainer.append(formTitle, formNote, form, submitBtn);
 
     initClickable(submitBtn, checkbox);

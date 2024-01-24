@@ -53,14 +53,16 @@ body {
     }
 }
 
-.cform-container>form {
+.cform-container>form>fieldset {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: start;
+    padding: 0;
+    border: none;
 }
 
-.cform-container>form>input, .cform-container>form>textarea {
+.cform-container>form>fieldset>input, .cform-container>form>fieldset>textarea {
     font-size: 1rem;
     padding: 5% 5%;
 }

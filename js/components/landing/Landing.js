@@ -1,12 +1,12 @@
 const buildComponent = () => {
     // Containers
-    const landingCont = document.createElement("div");
+    const landingCont = document.createElement("section");
     landingCont.className = "landing-container";
 
-    const landingLeftCont = document.createElement("div");
+    const landingLeftCont = document.createElement("section");
     landingLeftCont.className = "landing-left";
 
-    const landingRightCont = document.createElement("div");
+    const landingRightCont = document.createElement("section");
     landingRightCont.className = "landing-right";
 
     // Left container elements
@@ -33,12 +33,10 @@ const buildComponent = () => {
 
     const rightAnchor = document.createElement("a")
     rightAnchor.href = "./feed.html";
+    rightAnchor.className = "landing-btn";
+    rightAnchor.role = "button";
+    rightAnchor.textContent = "Discover Posts";
 
-    const rightBtn = document.createElement("button");
-    rightBtn.className = "landing-btn";
-    rightBtn.textContent = "Discover Posts";
-
-    rightAnchor.appendChild(rightBtn);
     landingRightCont.append(rightText, rightAnchor);
 
     // Append all containers to main container

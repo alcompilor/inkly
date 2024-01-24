@@ -1,7 +1,7 @@
 import * as Comment from "./Comment.js";
 
 const buildComponent = (comments) => {
-    const commentsContainer = document.createElement("div");
+    const commentsContainer = document.createElement("section");
     if (comments.length > 1) {
         commentsContainer.classList.add("comments-container", "hidden-overflow");
     } else {

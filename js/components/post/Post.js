@@ -6,11 +6,11 @@ const fetchUsername = async (userID) => {
 };
 
 const buildComponent = async (post) => {
-    const postContainer = document.createElement("div");
+    const postContainer = document.createElement("article");
     postContainer.className = "post-container";
     postContainer.dataset.id = post.id;
 
-    const postWrapper = document.createElement("div");
+    const postWrapper = document.createElement("section");
     postWrapper.className = "post-wrapper";
 
     const fetchedUsername = await fetchUsername(post.userId);
